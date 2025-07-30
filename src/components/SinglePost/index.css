@@ -1,0 +1,45 @@
+.post--card{
+    background-color: inherit;
+    padding: 1rem 2rem;
+}
+/* .post--card */
+.post--card:not(:last-child){
+    border-bottom: 1px solid #0004;
+}
+
+.post--card .post--header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.post--card .post--header .user--detail img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.post--card .post--header .user--detail{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.post--card .post--header .user--detail .user--name p{
+    font-size: smaller;
+    opacity: .5;
+}
+
+.post--card .post--notes{
+    margin: 1rem 0;
+}
+
+.post--card .post--action{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.post--card .post--action > div{
+    font-weight: 500;
+    gap: 5px;
+    align-items: center;
+    display: flex;
+}

@@ -1,0 +1,64 @@
+/* Contact Css */
+.contact--card{
+  padding: 1rem;
+  margin:1rem 2rem;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.contact--card h4{
+  font-size: .85rem;
+  font-weight: 599;
+  color: var(--facebook-blue);
+  margin-bottom: 1rem;
+}
+.contact--card img{
+  object-fit: cover;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.suggestion--list{
+  display: flex;
+  flex-direction: column;
+}
+.suggestion--list li i{
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.suggestion--list li{
+  background-color: #efefef;
+  display: flex;
+  margin-bottom: .2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: .5rem;
+}
+
+
+.suggestion--list li div img{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.suggestion--list li div i{
+  font-size: 2rem;
+}
+.suggestion--list li div p{
+  margin-bottom: 0;
+}
+.suggestion--list li div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.suggestion--list li div span{
+  display: block;
+  opacity: .7;
+  font-size: smaller;
+}
+

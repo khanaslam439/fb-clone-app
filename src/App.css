@@ -1,0 +1,102 @@
+  /* src/index.css or src/App.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+  
+body{
+  background-color: #f1f1f1; 
+}
+
+.page-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.page-container aside .seperator,
+.page-container section .seperator{
+  width: 100%;
+  height: 1px;
+  margin: 1rem 0;
+  background-color: #0004;
+
+}
+
+.page-container section{
+  position: relative;
+  width: 50%;
+}
+
+.page-container aside:last-child{
+  background-color: var(--dark-background);
+  border-left: 1px solid #0004;
+}
+
+.page-container aside{
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  border-right: 1px solid #0004;
+}
+
+
+
+
+/* Middle part css */
+
+.content--bottom{
+  max-height: calc(100vh - 95px);
+  overflow-y: scroll;
+}
+
+.content--top{
+  display: flex;
+  padding: 1rem 2rem 0;
+  justify-content: space-between;
+}
+
+.content--top .addpost--btn:hover{
+  box-shadow: none;
+}
+.content--top .addpost--btn{
+  padding: .5rem 2rem;
+  background-color: #00B2FF;
+  border-radius: 25px;
+  transition: .5s linear;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 10px 20px -5px #0003;
+}
+
+.search-group{
+  max-width: 350px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+  overflow: hidden
+}
+
+.search-group i{
+  width: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.search-group input{
+  outline: none;
+  width: calc(100% - 50px);
+  border-radius: 25px;
+  font-size: .8rem;
+  padding: 12px 0 12px 16px;
+  font-weight: 500;
+}

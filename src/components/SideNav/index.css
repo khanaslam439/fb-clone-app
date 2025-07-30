@@ -1,0 +1,56 @@
+.sidenav--left{
+  background-color:  #00B2FF;
+}
+.sidenav--left h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 1.6rem 2rem .6rem ;
+  color: #fff;
+}
+
+.page--navigation{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 2rem;
+}
+
+.page--navigation li{
+  padding: 0.4rem 1rem;
+  display: flex;
+  transition: 1s ease-out;
+  justify-content: space-between;
+  color: #fff;
+  border-radius: 25px;
+}
+.page--navigation li.active,
+.page--navigation li:hover,
+.page--navigation li:focus{
+  color: #fff;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.page--navigation li a{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+.page--navigation li span{
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 25px;
+  color: #5046e4;
+  line-height: 2;
+  padding: 0 10px;
+  transform: scale(.75);
+  box-sizing: border-box;
+  text-align: center;
+}
+.page--navigation li a i{
+  font-size: 1.25rem;
+}
